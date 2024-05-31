@@ -3,6 +3,7 @@
 ## Project Setup
 
 ```sh
+node -v    # v16.15.1 node版本必须大于16
 npm install
 ```
 
