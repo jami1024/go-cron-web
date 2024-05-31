@@ -1,7 +1,6 @@
 import { LOGIN_TOKEN, USER_INFO, USER_MENUS } from '@/global/constants'
 import router from '@/router'
 
-import type { IAccount } from '@/types'
 import { localCache } from '@/utils/cache'
 import { mapMenusToRoutes } from '@/utils/map-menus'
 import { defineStore } from 'pinia'
@@ -18,7 +17,7 @@ const useLoginStore = defineStore('login', {
     userMenus: []
   }),
   actions: {
-    async loginAccountAction(account: IAccount) {
+    async loginAccountAction() {
       // 1. 账号登陆,获取token等信息
       // const loginResult = await accountLoginRequest(account)
       // console.log('loginResult', loginResult)
