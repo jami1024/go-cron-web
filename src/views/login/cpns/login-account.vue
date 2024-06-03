@@ -32,12 +32,10 @@ const loginAction = (isKeepPassword: boolean) => {
   console.log(isKeepPassword)
   formRef.value?.validate((valid) => {
     if (valid) {
-      const name = account.name
-      const password = account.password
       localCache.setCache('name', account.name)
       localCache.setCache('password', account.password)
       // 登陆
-      loginStore.loginAccountAction({ name, password }).then(() => {
+      loginStore.loginAccountAction().then(() => {
         if (isKeepPassword) {
           localCache.setCache('name', account.name)
           localCache.setCache('password', account.password)
