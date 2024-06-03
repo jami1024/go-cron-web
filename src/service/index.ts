@@ -11,6 +11,7 @@ const zlRequest = new ZLRequest({
     requestSuccessFn: (config) => {
       // 每一个请求都自动携带token
       const token = localCache.getCache(LOGIN_TOKEN)
+      console.log('token', token)
       if (config.headers && token) {
         // 类型缩小
         config.headers.Authorization = 'Bearer ' + token

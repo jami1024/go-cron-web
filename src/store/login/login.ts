@@ -4,6 +4,7 @@ import router from '@/router'
 import { localCache } from '@/utils/cache'
 import { mapMenusToRoutes } from '@/utils/map-menus'
 import { defineStore } from 'pinia'
+// import useMainStore from '../main/main'
 
 interface ILoginState {
   token: string
@@ -21,6 +22,8 @@ const useLoginStore = defineStore('login', {
       // 1. 账号登陆,获取token等信息
       // const loginResult = await accountLoginRequest(account)
       // console.log('loginResult', loginResult)
+      // const id = 1
+      this.token = 'hhhhh'
       // token进行本地缓存
       localCache.setCache(LOGIN_TOKEN, this.token)
 
