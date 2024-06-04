@@ -35,7 +35,7 @@
               style="width: 100%"
               placeholder="请选择区域"
             >
-              <el-option label="国内" value="jbzk" />
+              <el-option label="国内" value="bjzk" />
               <el-option label="欧美" value="uszk" />
               <el-option label="日本" value="jpzk" />
               <el-option label="韩国" value="krzk" />
