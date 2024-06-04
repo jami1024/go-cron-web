@@ -1,4 +1,18 @@
 # go-cron-web
+## 该项目是[go-cron](https://github.com/jami1024/go-cron-web)前端页面
+## Configure the backend service address
+```
+# 配置后端地址和端口
+cat src/service/config/index.ts
+...
+if (import.meta.env.PROD) {
+  BASE_URL = 'http://xxxxx'
+} else {
+  // 正确配置后端服务地址和端口
+  BASE_URL = 'http://go-cron-server:8181'
+}
+...
+```
 
 ## Project Setup
 
