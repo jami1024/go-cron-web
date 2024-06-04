@@ -23,3 +23,12 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### docker
+``` 
+# 构建docker镜像
+docker build -t go-cron-web:latest .
+
+# 运行docker镜像
+docker run -d -p 80:80 go-cron-web:latest 
+```
